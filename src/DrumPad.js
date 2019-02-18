@@ -5,12 +5,6 @@ class DrumPad extends Component {
     this.audio.play();
   };
 
-  handleKeyPress = e => {
-    if (e.keyCode === this.props.keyCode) {
-      console.log(this.props.keyCode);
-    }
-  };
-
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
   }
@@ -19,13 +13,15 @@ class DrumPad extends Component {
     document.removeEventListener("keydown", this.handleKeyPress);
   }
 
+  handleKeyPress = e => {
+    if (e.keyCode === this.props.keyCode) {
+      this.audio.play();
+    }
+  };
+
   render() {
     return (
-      <div
-        className="drumPad"
-        onClick={() => this.handleClick()}
-        onKeyPress={() => this.handleKeyPress()}
-      >
+      <div className="drumPad" onClick={() => this.handleClick()}>
         {this.props.text}
         <audio ref={audio => (this.audio = audio)} src={this.props.url} />
       </div>

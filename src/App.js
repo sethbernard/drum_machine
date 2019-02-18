@@ -60,8 +60,8 @@ const data = [
 ];
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { display: "" };
   }
 
@@ -74,7 +74,7 @@ class App extends Component {
               text={pad.text}
               key={pad.id}
               id={pad.id}
-              keyCode={pad.keyCode}
+              keyCode={pad.keycode}
               url={pad.url}
             />
           ))}
