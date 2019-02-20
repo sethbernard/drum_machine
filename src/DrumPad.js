@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class DrumPad extends Component {
   handleClick = () => {
     this.audio.play();
+    this.props.display(this.props.id);
   };
 
   componentDidMount() {
@@ -14,16 +15,26 @@ class DrumPad extends Component {
   }
 
   handleKeyPress = e => {
-    if (e.keyCode === this.props.keyCode) {
-      this.audio.play();
-    }
+    return e.keyCode === this.props.keyCode
+      ? this.audio.play() && this.props.display(this.props.id)
+      : null;
   };
 
   render() {
     return (
-      <div className="drumPad" onClick={() => this.handleClick()}>
+      <div
+        className="drum-pad"
+        id={this.props.id}
+        onClick={() => this.handleClick()}
+        onKeyPress={this.props.style}
+      >
         {this.props.text}
-        <audio ref={audio => (this.audio = audio)} src={this.props.url} />
+        <audio
+          className="clip"
+          id={this.props.text}
+          ref={audio => (this.audio = audio)}
+          src={this.props.url}
+        />
       </div>
     );
   }
