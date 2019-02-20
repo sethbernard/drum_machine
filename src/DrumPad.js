@@ -26,7 +26,6 @@ class DrumPad extends Component {
         className="drum-pad"
         id={this.props.id}
         onClick={() => this.handleClick()}
-        onKeyPress={this.props.style}
       >
         {this.props.text}
         <audio

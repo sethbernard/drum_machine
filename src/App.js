@@ -3,10 +3,6 @@ import "./App.css";
 import { data } from "./data";
 import DrumPad from "./DrumPad";
 
-const backgroundColor = () => {
-  backgroundColor: "#aab6fe";
-};
-
 class App extends Component {
   state = {
     display: "You know what to do :)"
@@ -27,7 +23,6 @@ class App extends Component {
           <div id="drum-machine">
             {data.map(pad => (
               <DrumPad
-                style={this.state.display ? backgroundColor : null}
                 text={pad.text}
                 key={pad.id}
                 id={pad.id}
