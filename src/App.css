@@ -46,6 +46,11 @@
   font-weight: bold;
   color: #fff;
 }
+.drum-pad.active {
+  background-color: #aab6fe;
+  font-weight: bold;
+  color: #fff;
+}
 
 .container {
   display: flex;
