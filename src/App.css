@@ -26,6 +26,7 @@
   background-color: #cfcfcf;
   border-radius: 10px;
   border-style: solid;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .drum-pad {
@@ -39,17 +40,20 @@
   border-radius: 10px;
   cursor: pointer;
   background-color: #6f74dd;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .drum-pad:hover {
   background-color: #aab6fe;
   font-weight: bold;
   color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 .drum-pad.active {
   background-color: #aab6fe;
   font-weight: bold;
   color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .container {
