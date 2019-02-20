@@ -1,13 +1,13 @@
 const data = [
   {
     text: "Q",
-    id: "Woah",
+    id: "Woah!",
     keycode: 81,
     url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
   },
   {
     text: "W",
-    id: "Hey Now",
+    id: "Yo!",
     keycode: 87,
     url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
   },
@@ -19,7 +19,7 @@ const data = [
   },
   {
     text: "A",
-    id: "Nice job",
+    id: "Awesome!",
     keycode: 65,
     url: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
   },
@@ -49,7 +49,7 @@ const data = [
   },
   {
     text: "C",
-    id: "Snare Bear",
+    id: "Snare Blare",
     keycode: 67,
     url: "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"
   }
